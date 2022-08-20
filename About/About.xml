@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Prisoner No Interaction Alert</name>
+	<author>1trickPwnyta</author>
+	<packageId>prisonernointeractionalert.1trickPwnyta</packageId>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<description>
+Adds an alert to the game (right side of the screen) when you have one or more prisoners whose interaction is set to "No interaction". Ignores quest-related prisoners.
+	</description>
+	<url>https://github.com/1trickPwnyta/PrisonerNoInteractionAlert</url>
+</ModMetaData>
