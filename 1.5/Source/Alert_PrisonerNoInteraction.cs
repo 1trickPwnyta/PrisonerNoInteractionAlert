@@ -9,8 +9,12 @@ namespace PrisonerNoInteractionAlert
         private List<Pawn> GetCulprits()
         {
             List<Pawn> culprits = new List<Pawn>();
-            PawnsFinder.AllMaps_PrisonersOfColonySpawned.ForEach(pawn => {
-                if (pawn.GetExtraHostFaction() == null && pawn.guest.IsInteractionEnabled(PrisonerInteractionModeDefOf.MaintainOnly) && pawn.guest.IsInteractionDisabled(PrisonerInteractionModeDefOf.HemogenFarm) && pawn.guest.Recruitable) culprits.Add(pawn);
+            PawnsFinder.AllMaps_PrisonersOfColonySpawned.ForEach(pawn => 
+            {
+                if (pawn.GetExtraHostFaction() == null && pawn.guest.IsInteractionEnabled(PrisonerInteractionModeDefOf.MaintainOnly) && pawn.guest.IsInteractionDisabled(PrisonerInteractionModeDefOf.HemogenFarm) && pawn.guest.IsInteractionDisabled(PrisonerInteractionModeDefOf.Bloodfeed) && pawn.guest.Recruitable)
+                {
+                    culprits.Add(pawn);
+                }
             });
             return culprits;
         }
