@@ -12,6 +12,7 @@
 Adds an alert to the game (right side of the screen) when you have one or more prisoners whose interaction is set to "Maintain Only" and is not set to "Hemogen Farm". Ignores unwavering and quest-related prisoners.
 
 === Updates ===
+04/24/2024: Fix alert to not show up when bloodfeed is selected
 04/11/2024: Ignore unwavering prisoners
 03/21/2024: Update to 1.5
 	</description>
