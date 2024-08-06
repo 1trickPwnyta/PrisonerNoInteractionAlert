@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="1.5">
-      <HintPath>..\..\..\..\RimWorld\RimWorld Code 1.5\1.5.dll</HintPath>
+      <HintPath>..\..\..\..\..\RimWorld\RimWorld Code 1.5\1.5.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -44,7 +44,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -52,6 +52,7 @@
     <Compile Include="Alert_PrisonerNoInteraction.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="PrisonerNoInteractionAlertMod.cs" />
+    <Compile Include="PrisonerNoInteractionAlertSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
