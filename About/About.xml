@@ -18,6 +18,9 @@ Adds an alert to the game (right side of the screen) when you have one or more p
 04/24/2024: Fix alert to not show up when bloodfeed is selected
 04/11/2024: Ignore unwavering prisoners
 03/21/2024: Update to 1.5
+
+=== Credits ===
+Mod icon: twitter.com/mouse_draws
 	</description>
 	<url>https://github.com/1trickPwnyta/PrisonerNoInteractionAlert</url>
 </ModMetaData>
