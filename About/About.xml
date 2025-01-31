@@ -12,6 +12,7 @@
 Adds an alert to the game (right side of the screen) when you have one or more prisoners whose interaction is set to "Maintain Only" and is not set to "Hemogen Farm". Ignores quest-related and optionally unwavering prisoners.
 
 === Updates ===
+01/30/2025: Ignore alert for imprisoned wild people marked for taming
 08/06/2024: Add option to ignore unwavering prisoners (or not)
 06/07/2024: Don't show the alert for prisoners who have been released and are walking away
 04/24/2024: Fix alert to not show up when bloodfeed is selected

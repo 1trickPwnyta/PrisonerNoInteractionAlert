@@ -11,9 +11,18 @@ namespace PrisonerNoInteractionAlert
             List<Pawn> culprits = new List<Pawn>();
             PawnsFinder.AllMaps_PrisonersOfColonySpawned.ForEach(pawn => 
             {
-                if (pawn.guest != null && !pawn.guest.Released && pawn.GetExtraHostFaction() == null && pawn.guest.IsInteractionEnabled(PrisonerInteractionModeDefOf.MaintainOnly) && pawn.guest.IsInteractionDisabled(PrisonerInteractionModeDefOf.HemogenFarm) && pawn.guest.IsInteractionDisabled(PrisonerInteractionModeDefOf.Bloodfeed) && (!PrisonerNoInteractionAlertSettings.IgnoreUnwaveringPrisoners || pawn.guest.Recruitable))
+                if (pawn.guest != null && !pawn.guest.Released && pawn.GetExtraHostFaction() == null)
                 {
-                    culprits.Add(pawn);
+                    if (pawn.guest.IsInteractionEnabled(PrisonerInteractionModeDefOf.MaintainOnly) && pawn.guest.IsInteractionDisabled(PrisonerInteractionModeDefOf.HemogenFarm) && pawn.guest.IsInteractionDisabled(PrisonerInteractionModeDefOf.Bloodfeed))
+                    {
+                        if (!PrisonerNoInteractionAlertSettings.IgnoreUnwaveringPrisoners || pawn.guest.Recruitable)
+                        {
+                            if (!pawn.IsWildMan() || pawn.Map.designationManager.DesignationOn(pawn, DesignationDefOf.Tame) == null)
+                            {
+                                culprits.Add(pawn);
+                            }
+                        }
+                    }
                 }
             });
             return culprits;
