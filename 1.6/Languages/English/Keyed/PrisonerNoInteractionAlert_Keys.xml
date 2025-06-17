@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	
+	<PrisonerNoInteractionAlert_IgnoreUnwaveringPrisoners>Ignore unwavering prisoners</PrisonerNoInteractionAlert_IgnoreUnwaveringPrisoners>
+	<PrisonerNoInteraction>No interaction set for prisoner</PrisonerNoInteraction>
+	<PrisonerNoInteractionDesc>A prisoner is not set to be interacted with. Access their prisoner tab to set an interaction.</PrisonerNoInteractionDesc>
+	
+</LanguageData>
